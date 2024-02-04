@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import authService from './appwrite/auth'
 import { login, logout} from './store/authSlice'
-import { Header, Footer } from './components/index'
+import { Header, Footer } from './components'
 import { Outlet } from 'react-router-dom'
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     }
   })
   .finally(() => setLoading(false))
-  }, [])
+  }, [dispatch])
 
   return !loading ? (
     <div className='bg-[#212121] text-white min-h-screen flex flex-wrap content-between'>
