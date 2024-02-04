@@ -5,6 +5,8 @@ import Container from './Container/Container'
 import Logo from './Logo'
 import Button from './Button'
 import Input from './Input'
+import RTE from './RTE'
+import Select from './Select'
 
 
 export {
@@ -15,5 +17,6 @@ export {
     Logo,
     Button,
     Input,
-    
+    RTE,
+    Select
 }
