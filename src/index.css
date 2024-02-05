@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html{
+    height: 100vh;
+}
+
+header{
+    height: 80px;
+}
+
+main{
+    min-height: 80vh;
+    background-color: #1e2027;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+}

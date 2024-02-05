@@ -1,8 +1,9 @@
-import { Editor } from "@tinymce/tinymce-react"
-import { Controller } from "react-hook-form"
+/* eslint-disable react/prop-types */
+import {Editor } from '@tinymce/tinymce-react';
+import {Controller } from 'react-hook-form';
 
-// eslint-disable-next-line react/prop-types
-export default function RTE({name, control, label, defaultValue=''}) {
+
+export default function RTE({name, control, label, defaultValue =""}) {
   return (
     <div className='w-full'> 
     {label && <label className='inline-block mb-1 pl-1'>{label}</label>}
@@ -12,6 +13,7 @@ export default function RTE({name, control, label, defaultValue=''}) {
     control={control}
     render={({field: {onChange}}) => (
         <Editor
+        apiKey='uub0ag2oj7s899e5e669f4t4vtvon0z5sg3qk1siovkakf3h'
         initialValue={defaultValue}
         init={{
             initialValue: defaultValue,
